@@ -1,5 +1,10 @@
 import os
-from data.data_loader import DataLoader
+import sys
+
+# Add the project root directory to Python path
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from data.dataloader import DataLoader
 from models.cnn_model import DigitRecognitionModel
 from utils.visualization import Visualizer
 from config.config import *

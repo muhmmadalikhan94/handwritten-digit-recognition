@@ -1,5 +1,11 @@
+import os
+import sys
+
+# Add the project root directory to Python path
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 from tensorflow import keras
-from data.data_loader import DataLoader
+from data.dataloader import DataLoader
 from utils.evaluation import ModelEvaluator
 from utils.visualization import Visualizer
 from config.config import *
